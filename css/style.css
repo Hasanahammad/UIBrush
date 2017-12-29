@@ -1,6 +1,12 @@
+*{
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
 .header-section{}
 .navbar-default .navbar-brand span{color: #fff;}
-body{    background: #8080803d;
+body{    background: #fff;
 }
 .navbar-default .navbar-brand {
     font-size: 24px;
@@ -26,32 +32,19 @@ body{    background: #8080803d;
     background-color: transparent;
 }
 .carousel-inner > .item > img {
-    width: 100%;
+        width: 100%;
+    height: 100vh;
+    line-height: 1;
 }
 .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    bottom: auto !important;
+    top: 50%;
     color: #fff;
-    text-align: center;
-    transform: translateY(-100%) !important;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    transform: translateY(-50%) !important;
 }
 .carousel-caption h1{}
 .btn-custom{}
-.carousel-caption h1 {
-    text-transform: uppercase;
-    font-size: 30px;
-    max-width: 500px;
-    width: 50%;
-    margin: 0 auto;
-    padding: 18px;
-    line-height: 1.5;
-}
+.carousel-caption h1 {text-transform: uppercase;font-size: 30px;font-weight: 600;max-width: 500px;margin: 0 auto;line-height: 1.6;margin-bottom: 20px;}
 element.style {
 }
 .btn-custom {
@@ -79,7 +72,9 @@ element.style {
 .list-inline li strong{}
 .list-inline li span{    margin-left: 180px;}
 .services-section h2{
-    text-align: center;
+        text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .services-section p{
     text-align: center;
@@ -92,6 +87,7 @@ element.style {
     text-transform: uppercase;
     font-size: 20px;
 }
+.portfolio-section{background: #80808045;}
 .service span{background: #999;width:  100px;margin:  0 auto;height: 2px;display:  block;}
 .service p{
     margin-top: 10px;
@@ -167,3 +163,5 @@ transform: translate(-50%,-50%) scale(1);}
         background: #25242785;
 }
 footer{text-align: center;}
+.services-section{background: #8080803b;
+    padding-bottom: 7pc;}
